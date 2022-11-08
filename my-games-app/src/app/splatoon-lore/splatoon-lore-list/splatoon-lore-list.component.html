@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">Add Theories!</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <a href="#" class="list-group-item clearfix" *ngFor="let lore of lores">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{lore.topic}}</h4>
+        <p class="list-group-item-text">{{lore.description}}</p>
+      </div>
+      <span class="pull-right">
+        <img src="{{lore.imagePath}}" alt="{{lore.topic}}" class="img-responsive" style="max-height: 100px;">
+      </span>
+    </a>
+    <app-lore-items></app-lore-items>
+  </div>
+</div>
