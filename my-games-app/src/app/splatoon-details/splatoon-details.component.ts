@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./splatoon-details.component.css']
 })
 export class SplatoonDetailsComponent implements OnInit {
+  details = [];
 
   constructor() { }
 
