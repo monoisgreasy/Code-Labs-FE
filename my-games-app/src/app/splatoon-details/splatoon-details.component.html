@@ -3,7 +3,7 @@
     <app-splatoon-characters></app-splatoon-characters>
     <hr>
     <ul class="list-group">
-      <a class="list-group-item" style="cursor: pointer"></a>
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let details of detail">{{details.name}} {{(details.amountOfCharacters)}}</a>
     </ul>
   </div>
 </div>
