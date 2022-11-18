@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-splatoon-lore></app-splatoon-lore>
-      <app-splatoon-details></app-splatoon-details>
+      <app-splatoon-lore *ngIf="loadedFeature === 'splatoon-lore'"></app-splatoon-lore>
+      <app-splatoon-details *ngIf="loadedFeature !== 'splatoon-lore'"></app-splatoon-details>
     </div>
   </div>
 </div>

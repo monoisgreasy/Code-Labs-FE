@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-games-app';
+
+  loadedFeature = 'splatoon-lore'
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
