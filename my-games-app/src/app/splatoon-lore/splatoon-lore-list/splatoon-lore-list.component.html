@@ -6,6 +6,6 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-lore-items *ngFor="let loreEl of lores" [lore]="loreEl"></app-lore-items>
+    <app-lore-items *ngFor="let loreEl of lores" [lore]="loreEl" (loreSelected)="onLoreSelected(loreEl)"></app-lore-items>
   </div>
 </div>

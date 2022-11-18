@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Lore } from './splatoon-lore.model';
 
 @Component({
   selector: 'app-splatoon-lore',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./splatoon-lore.component.css']
 })
 export class SplatoonLoreComponent implements OnInit {
+
+  selectedLore: Lore
 
   constructor() { }
 

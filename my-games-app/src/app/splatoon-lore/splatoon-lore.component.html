@@ -1,9 +1,12 @@
 <div class="row">
   <div class="col-md-5">
-    <app-splatoon-lore-list></app-splatoon-lore-list>
+    <app-splatoon-lore-list (loreWasSelected)="selectedLore = $event"></app-splatoon-lore-list>
   </div>
   <div class="col-md-7">
-    <app-splatoon-lore-details></app-splatoon-lore-details>
+    <app-splatoon-lore-details *ngIf="selectedLore; else infoText" [lore]="selectedLore"></app-splatoon-lore-details>
+    <ng-template #infoText>
+      <p>Look at some of the Splatoon lore!</p>
+    </ng-template>
   </div>
 </div>
 

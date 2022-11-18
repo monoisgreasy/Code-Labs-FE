@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 import { Lore } from '../../splatoon-lore.model';
 
@@ -9,10 +9,15 @@ import { Lore } from '../../splatoon-lore.model';
 })
 export class LoreItemsComponent implements OnInit {
   @Input() lore: Lore;
+  @Output() loreSelected = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelected() {
+    this.loreSelected.emit();
   }
 
 }
