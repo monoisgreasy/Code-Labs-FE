@@ -9,6 +9,7 @@ import { SplatoonLoreDetailsComponent } from './splatoon-lore/splatoon-lore-deta
 import { LoreItemsComponent } from './splatoon-lore/splatoon-lore-list/lore-items/lore-items.component';
 import { SplatoonDetailsComponent } from './splatoon-details/splatoon-details.component';
 import { SplatoonCharactersComponent } from './splatoon-details/splatoon-characters/splatoon-characters.component';
+import { DropdownDirective } from './shared/dropdown-directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SplatoonCharactersComponent } from './splatoon-details/splatoon-charact
     SplatoonLoreDetailsComponent,
     LoreItemsComponent,
     SplatoonDetailsComponent,
-    SplatoonCharactersComponent
+    SplatoonCharactersComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule

@@ -6,27 +6,24 @@
           <label for="name">Name of Character</label>
           <input type="text" id="name" class="form-control" #nameInput>
         </div>
-        <div class="col-sm-2 form-control">
+        <div class="col-sm-5 form-group">
           <label for="amountOfCharacters">Amount of Characters</label>
           <input type="number" id="amountOfCharacters" class="form-control" #amountInput>
         </div>
       </div>
-      <hr>
-      <ul class="list-inline m-0">
       <div class="row">
         <div class="col-md-12">
-          <li class="list-inline-item">
+          <p>
           <button class="btn btn-success" type="submit" (click)="onAddItem()" >Add More Characters</button>
-          </li>
-          <li class="list-inline-item">
+          </p>
+          <p>
           <button class="btn btn-danger" type="button">Delete Characters</button>
-          </li>
-          <li class="list-inline-item">
+          </p>
+          <p>
           <button class="btn btn-primary" type="button">Clear Characters</button>
-          </li>
+          </p>
         </div>
       </div>
-      </ul>
     </form>
   </div>
 </div>
