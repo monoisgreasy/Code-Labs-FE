@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-xs-10">
-    <app-splatoon-characters></app-splatoon-characters>
+    <app-splatoon-characters (detailAdded)="onDetailAdded($event)"></app-splatoon-characters>
     <hr>
     <ul class="list-group">
-      <a class="list-group-item" style="cursor: pointer" *ngFor="let details of detail">{{details.name}} {{(details.amountOfCharacters)}}</a>
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let details of details">{{details.name}} {{(details.amountOfCharacters)}}</a>
     </ul>
   </div>
 </div>

@@ -8,14 +8,18 @@ import { Details } from '../shared/details.model';
   styleUrls: ['./splatoon-details.component.css']
 })
 export class SplatoonDetailsComponent implements OnInit {
-  detail: Details[] = [
-    new Details('Inklings have a bridge above their noses that connects their eyes!', 100000000),
-    new Details('Octolings have no bridges above their noses!', 10000000),
+  details: Details[] = [
+    new Details('Inklings have a bridge above their noses that connects their eyes!', 0),
+    new Details('Octolings have no bridges above their noses!', 0),
   ];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDetailAdded(detail: Details) {
+    this.details.push(detail);
   }
 
 }
